@@ -14,10 +14,10 @@
 <body>
     <div class="doc__bg"></div>
     <nav class="header">
-        <h1 class="logo">&nbsp;&nbsp; User Policy</h1>
+        <h1 class="logo">&nbsp;&nbsp; Data Policy</h1>
         <ul class="menu">
-            <li class="menu__item"><a href="https://codekosh-afi.github.io/codekosh.github.io/"
-                    class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+            <li class="menu__item"><a href="https://jaago-bharat.github.io/Jaago-Bharat/" class="link link--dark"><i
+                        class="fa fa-home"></i> Home</a></li>
         </ul>
     </nav>
     <div class="wrapper">
@@ -28,8 +28,8 @@
                 <li class="js-btn" onclick="showSection('Editor')" data-section="Editor">Editor choice & verification
                 </li>
                 <li class="js-btn" onclick="showSection('Profile')" data-section="Profile">Account</li>
-                <li class="js-btn" onclick="showSection('Comments')" data-section="Comments">Comments</li>
-                <li class="js-btn" onclick="showSection('Reports')" data-section="Reports">Reports</li>
+                <li class="js-btn" onclick="showSection('News')" data-section="News">News</li>
+                <li class="js-btn" onclick="showSection('Support')" data-section="Support">Support</li>
             </ul>
         </aside>
         <article class="doc__content">
@@ -246,9 +246,9 @@
 
                 <hr>
             </section>
-            <section id="Comments">
+            <section id="News">
                 <!-- Comments section content -->
-                <h2 class="section__title" id="Comments">Comments</h2>
+                <h2 class="section__title" id="News">News</h2>
                 <ol type="a">
                     <li>Please avoid using comments for off-topic discussions or unrelated content.</li>
                     <li>Advertising is permitted exclusively within the comment section of your own project.</li>
@@ -261,17 +261,28 @@
 
                 <hr>
             </section>
-            <section id="Reports">
+            <section id="Support">
                 <!-- Reports section content -->
-                <h2 class="section__title" id="Reports">Reports</h2>
+                <h2 class="section__title" id="Support">Support</h2>
                 <ol type="a">
-                    <li>Reports are treated seriously, so ensure you report for valid reasons before submission.</li>
-                    <li>Please refrain from reporting projects as stolen unless you are the rightful owner and the
-                        reported project violates rule <b>c.ii</b> of Projects.</li>
-                    <li>Upon receiving an email related to your report, please provide a proper response if it pertains
-                        to you and you wish for your report to be taken seriously.</li>
-                    <li>All projects are available for free use, but they may not always be ready for immediate use.
-                        Therefore, please avoid reporting projects solely based on compilation issues.</li>
+                    <li>The inclusion of your name in the support section does not necessitate any financial
+                        contribution or explicit request.</li>
+                    <li>The individuals featured in the support section are chosen by the moderators based on their
+                        commendable contributions and work.</li>
+                    <li>After being selected for the support section based on their work, individuals can be removed if
+                        subsequent contributions are unsatisfactory.</li>
+                    <li>Individuals selected for the support section who wish to be removed can initiate the process by
+                        submitting a request at <a
+                            href="mailto:jaago.bharat.official.afi@gmail.com">jaago.bharat.official.afi@gmail.com</a>
+                    </li>
+                    <li>To be considered for the support section, your work should focus on one of the following:</li>
+                    <ol type="i">
+                        <li>Presentation of facts or knowledge related to <b>Sanatan Dharm </b>with substantiated proof
+                            and
+                            references.</li>
+                        <li>Demonstrated knowledge of product ingredients used.</li>
+                        <li>Coverage of news pertaining to Bharat.</li>
+                    </ol>
                 </ol>
             </section>
         </article>
@@ -291,12 +302,11 @@
                 item.classList.remove('selected');
             });
 
-            // Add the 'selected' class to the clicked navigation item
             var selectedNavItem = document.querySelector('.doc__nav li[data-section="' + sectionId + '"]');
             selectedNavItem.classList.add('selected');
         }
         document.addEventListener('DOMContentLoaded', function () {
-            var defaultSection = 'General'; // Replace with your desired default section
+            var defaultSection = 'General';
             showSection(defaultSection);
         });
     </script>
