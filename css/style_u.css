@@ -52,9 +52,9 @@ body {
 
 /* logo */
 .logo {
-    font-weight: 900;
+    font-weight: 800;
     color: var(--primary-color);
-    font-size: 1.4em;
+    font-size: 1.2em;
     grid-column: 2;
 }
 
